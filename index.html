@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Amr | Video Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor"></div>
+
+<!-- Gradient Background -->
+<div class="gradient-bg">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar">
+  <h2 class="logo">AHMED AMR</h2>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+  <p class="hero-eyebrow">Video Editor · Cairo, Egypt</p>
+  <h1>Crafting <span>Reels</span><br>That Convert</h1>
+  <p class="hero-sub">Cinematic · Ads · Social Media</p>
+  <a href="#work" class="showreel-btn">&#9654; View Portfolio</a>
+</section>
+
+<!-- Work -->
+<section id="work" class="section reveal">
+  <p class="section-label">Portfolio</p>
+  <h2>My Work</h2>
+
+  <div class="filter-tabs">
+    <button class="tab-btn active" onclick="filterVideos('all', event)">All</button>
+    <button class="tab-btn" onclick="filterVideos('reel', event)">Reels</button>
+    <button class="tab-btn" onclick="filterVideos('ad', event)">Ads</button>
+  </div>
+
+  <!-- Reels row -->
+  <div class="reels-grid">
+    <div class="phone reel">
+      <video controls controlsList="nodownload nofullscreen noplaybackrate"
+        disablePictureInPicture oncontextmenu="return false;">
+        <source src="reels/لسه قدامي وقت !.mp4">
+      </video>
+    </div>
+    <div class="phone reel">
+      <video controls controlsList="nodownload nofullscreen noplaybackrate"
+        disablePictureInPicture oncontextmenu="return false;">
+        <source src="reels/في صداع بيخدعك 2.mp4">
+      </video>
+    </div>
+    <div class="phone reel">
+      <video controls controlsList="nodownload nofullscreen noplaybackrate"
+        disablePictureInPicture oncontextmenu="return false;">
+        <source src="reels/Css.mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Ads row — كلهم في ads-grid واحد -->
+  <div class="ads-grid">
+    <div class="landscape-card ad">
+      <div class="landscape-label">Gym Ad</div>
+      <video controls controlsList="nodownload nofullscreen noplaybackrate"
+        disablePictureInPicture oncontextmenu="return false;">
+        <source src="reels/Ads Gym .mp4">
+      </video>
+    </div>
+    <div class="landscape-card ad">
+      <div class="landscape-label">Restaurant Ad</div>
+      <video controls controlsList="nodownload nofullscreen noplaybackrate"
+        disablePictureInPicture oncontextmenu="return false;">
+        <source src="reels/Ads resturant.mp4">
+      </video>
+    </div>
+  </div>
+
+</section>
+
+<!-- Services -->
+<div class="section-full">
+  <section id="services" class="section reveal">
+    <p class="section-label">What I Do</p>
+    <h2>Services</h2>
+    <div class="cards">
+      <div class="card"><span class="card-icon">🎬</span>Reels Editing</div>
+      <div class="card"><span class="card-icon">📢</span>Ads Editing</div>
+      <div class="card"><span class="card-icon">🎨</span>Color Grading</div>
+      <div class="card"><span class="card-icon">🔊</span>Sound Design</div>
+    </div>
+  </section>
+</div>
+
+<!-- Contact -->
+<div class="section-full">
+  <section id="contact" class="section reveal">
+    <p class="section-label">Get In Touch</p>
+    <h2>Contact Me</h2>
+    <div class="contact-box">
+     <a href="https://forms.gle/mEcHgTye58Yu6FDY8" target="_blank" class="contact-item">📋 Request Work</a>
+      <a href="https://wa.me/201037113519" target="_blank" class="contact-item">📱 WhatsApp</a>
+      <a href="" target="_blank" class="contact-item">📸 Instagram</a>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  © 2026 Ahmed Amr. All Rights Reserved.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
