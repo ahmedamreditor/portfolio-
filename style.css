@@ -479,3 +479,27 @@ body {
   .ads-grid { grid-template-columns: 1fr !important; }
   .hero h1 { font-size: 42px; }
 }
+
+/* Mobile Final Fix */
+@media (max-width: 600px) {
+  /* ريلز واحد في الصف عشان يبقى أكبر */
+  .reels-grid {
+    grid-template-columns: 1fr !important;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* إعلانات أكبر */
+  .ads-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .landscape-card video {
+    aspect-ratio: 16 / 9 !important;
+    min-height: 200px;
+  }
+
+  /* إخفاء الكيرسور على الموبايل */
+  .cursor { display: none !important; }
+}
