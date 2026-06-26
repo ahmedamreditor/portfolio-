@@ -453,3 +453,29 @@ body {
   .reels-grid { grid-template-columns: 1fr; }
   .phone { width: 200px; height: 400px; }
 }
+
+/* Responsive - Mobile Fix */
+@media (max-width: 900px) {
+  .reels-grid { grid-template-columns: repeat(2, 1fr); }
+  .ads-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+  .navbar { padding: 12px 16px; }
+  .navbar ul { gap: 10px; }
+  .navbar a { font-size: 12px; }
+  .logo { font-size: 16px; letter-spacing: 2px; }
+  .section { padding: 60px 16px; }
+  .section-full { padding: 60px 16px; }
+  .reels-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 12px;
+  }
+  .phone {
+    width: 100% !important;
+    aspect-ratio: 9 / 16 !important;
+    height: auto !important;
+  }
+  .ads-grid { grid-template-columns: 1fr !important; }
+  .hero h1 { font-size: 42px; }
+}
