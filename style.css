@@ -487,3 +487,16 @@ body {
     min-height: 180px;
   }
 }
+
+/* Force mobile ads stack */
+@media only screen and (max-width: 600px) {
+  .ads-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  .ads-grid .landscape-card {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
